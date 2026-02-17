@@ -13,7 +13,7 @@ func Set(logger *slog.Logger) {
 	Logger = logger
 }
 
-func UseDefault() {
+func SetupDefault() {
 	logHandler := tint.NewHandler(os.Stdout, &tint.Options{
 		Level:      slog.LevelDebug,
 		TimeFormat: "2006-01-02 15:04:05.000",
